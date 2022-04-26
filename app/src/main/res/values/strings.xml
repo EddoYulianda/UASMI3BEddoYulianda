@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">UASMI3BEddoYulianda</string>
+    <string-array name="daftar_satuan">
+        <item>Buah</item>
+        <item>Sachet</item>
+        <item>Bungkus</item>
+        <item>Gram</item>
+        <item>Box</item>
+    </string-array>
+
+    <string-array name="daftar_bayar">
+        <item>Cash</item>
+        <item>Cash On Delivery</item>
+        <item>Debit</item>
+        <item>Debit Card</item>
+
+    </string-array>
+</resources>

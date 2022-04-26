@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".InsertProductActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Transaksi Barang"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+
+            <TableLayout
+                android:layout_below="@+id/judul"
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txtkode"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kode Barang :"
+                        android:textSize="20sp"
+                        />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:hint="input Barang"
+                            android:id="@+id/kode"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="90dp"
+                            android:layout_width="250sp"
+                            android:inputType="text" android:background="@color/white"
+                            android:layout_height="wrap_content"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/txtBarang"
+                        android:textStyle="bold"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Barang :"
+                        android:textSize="20sp"
+                        />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:inputType="textPassword"
+                            android:hint="Input Nama Barang"
+                            android:id="@+id/namabrg"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="90dp"
+                            android:layout_width="250sp"
+                            android:background="@color/white"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/Txtsatuan"
+                        android:textStyle="bold"
+                        android:layout_marginTop="37dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Satuan :"
+                        android:textSize="20sp"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/listItem1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/daftar_satuan"
+                            android:padding="15dp">
+
+                        </Spinner>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/TxtHrg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Harga Satuan :"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/hargaSatuan"
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="90dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/white"
+                            android:hint="Input Harga Satuan" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/TxtJmlh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Jumlah Beli :"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/JmlhBeli"
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="90dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/white"
+                            android:hint="Input Jumlah Beli" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/TxtGmbr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Gambar Barang :"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/Gmbr"
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="90dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/white"
+                            android:hint="Input Gambar" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/TxtBayar"
+                        android:textStyle="bold"
+                        android:layout_marginTop="37dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cara Bayar :"
+                        android:textSize="20sp"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/listItem2"
+                            android:entries="@array/daftar_bayar"
+                            android:padding="15dp">
+
+                        </Spinner>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/Txtpromo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Harga Promo :"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/hargaPromo"
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="90dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/white"
+                            android:hint="Input Harga Promo" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btnInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/table"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#076159"
+                android:text="INPUT" />
+        </RelativeLayout>
+    </ScrollView>
